@@ -8,7 +8,7 @@
             "value": "1b8ac568-33f9-6ad6-acb5-195b8a919bb0"        
         }
     },
-    "website": "https://starts.sh",
+    
     "repository": "https://github.com/armynew/kinto",
     "stack": "container"
 }
