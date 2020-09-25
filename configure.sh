@@ -21,12 +21,12 @@ cat << EOF > /usr/local/etc/v2ray/config.json
 {
     "inbounds": [
         {
-            "port": 8888,
+            "port": $PORT,
             "protocol": "vmess",
             "settings": {
                 "clients": [
                     {
-                        "id": "5c25aa6b-9a78-47b6-9dd0-394855a99b3a",
+                        "id": "$UUID",
                         "alterId": 64
                     }
                 ],
@@ -65,8 +65,8 @@ EOF
 
 
 # Run V2Ray
-#/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
-nohup tor & \
-    /usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
+/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
+#nohup tor & \
+#    /usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
     
 echo  "finish sh cmd"
