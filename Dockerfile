@@ -12,7 +12,7 @@ RUN git clone --progress https://github.com/v2fly/v2ray-core.git . && \
     bash ./release/user-package.sh nosource noconf codename=$(git describe --tags) buildname=flysky abpathtgz=/tmp/v2ray.tgz
 
 FROM alpine
-ENV CONFIG=https://raw.githubusercontent.com/ancc198/kinto/master/config.json
+ENV CONFIG=https://raw.githubusercontent.com/ancc198/xpro/master/config.json
 COPY --from=builder /tmp/v2ray.tgz /tmp
 RUN apk update && apk add --no-cache tor ca-certificates && \
     tar xvfz /tmp/v2ray.tgz -C /usr/bin && \
