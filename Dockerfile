@@ -1,8 +1,8 @@
 FROM alpine
-RUN apk add --no-cache --virtual .build-deps ca-certificates curl unzip tor bash
+RUN apk add --no-cache --virtual .build-deps ca-certificates curl unzip
 ADD configure.sh /configure.sh
 RUN chmod +x /configure.sh
-RUN bash /configure.sh
+CMD /configure.sh
 
 
 #FROM golang:alpine AS builder
