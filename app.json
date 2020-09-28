@@ -6,9 +6,14 @@
         "UUID": {
             "description": "v2ray UUID",
             "value": "1b8ac568-33f9-6ad6-acb5-195b8a919bb0"        
+        },
+        
+        "PATH": {
+            "description": "the ws path",
+            "value": "/ws198"        
         }
     },
     
-    "repository": "https://github.com/armynew/kinto",
+    "repository": "https://github.com/ancc198/kinto",
     "stack": "container"
 }
